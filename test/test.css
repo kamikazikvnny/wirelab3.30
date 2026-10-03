@@ -1,0 +1,692 @@
+/* =========================================================
+   WIRELAB — TEST
+   HOME-STYLE GLASS / GOLD THEME
+========================================================= */
+
+
+/* =========================================================
+   TEST CONTENT
+========================================================= */
+
+.test-content {
+    width: calc(100% - 20px);
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 16px 0 40px;
+}
+
+
+/* =========================================================
+   TEST ART
+========================================================= */
+
+.test-art2 {
+    display: block;
+
+    width: 100vw;
+    max-width: none;
+    height: auto;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.test-intro {
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.test-intro h2 {
+    margin: 0 0 10px;
+
+    color: #f0c94a;
+}
+
+.test-intro p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: rgba(235, 235, 235, 0.68);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CARD GRID
+========================================================= */
+
+.test-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(1, minmax(0, 1fr));
+
+    gap: 12px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   BASE CARD
+========================================================= */
+
+.test-card {
+    position: relative;
+
+    padding: 18px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.25);
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(227, 226, 226, 0.10),
+            rgba(184, 184, 184, 0.035)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.06);
+}
+
+
+/* =========================================================
+   CARD SIZES
+========================================================= */
+
+.test-card-main,
+.test-card-small,
+.test-card-medium {
+    grid-column: span 1;
+}
+
+.test-card-main {
+    min-height: auto;
+}
+
+.test-card-small {
+    min-height: 230px;
+}
+
+.test-card-medium {
+    min-height: 230px;
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.test-card-header h3,
+.test-card h3 {
+    margin: 8px 0 10px;
+
+    color: #f1f1f1;
+
+    font-size: 1.35rem;
+}
+
+.test-card-header p,
+.test-card > p {
+    margin: 0;
+
+    color: rgba(220, 220, 220, 0.58);
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CARD LABEL
+========================================================= */
+
+.card-label {
+    display: inline-block;
+
+    color: #d6a84f;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+
+    text-shadow:
+        0 0 10px rgba(214, 168, 79, 0.12);
+}
+
+
+/* =========================================================
+   TEST AREA
+========================================================= */
+
+.test-area {
+    margin-top: 20px;
+    padding: 18px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.20);
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(0, 0, 0, 0.25)
+        );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.05);
+}
+
+
+/* =========================================================
+   START AREA
+========================================================= */
+
+.test-start {
+    text-align: center;
+
+    padding: 30px 15px;
+}
+
+.test-start h4 {
+    margin: 0 0 10px;
+
+    color: #f1f1f1;
+
+    font-size: 1.25rem;
+}
+
+.test-start p {
+    margin: 0 0 25px;
+
+    color: rgba(220, 220, 220, 0.58);
+}
+
+
+/* =========================================================
+   QUESTION AREA
+========================================================= */
+
+.question-progress {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 10px;
+
+    color: #d6a84f;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.progress-track {
+    width: 100%;
+    height: 6px;
+
+    margin-bottom: 25px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255, 255, 255, 0.075);
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            #9f7b1f,
+            #d6a84f,
+            #f0c94a
+        );
+
+    transition:
+        width 0.25s ease;
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.question-area h4 {
+    margin: 0 0 22px;
+
+    color: #f1f1f1;
+
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ANSWER CHOICES
+========================================================= */
+
+.answer-choices {
+    display: grid;
+
+    gap: 10px;
+}
+
+.answer-choice {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.20);
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(18, 20, 22, 0.38)
+        );
+
+    color: #ffffff;
+
+    text-align: left;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+.answer-choice:hover {
+    border-color:
+        rgba(214, 168, 79, 0.50);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.075),
+            rgba(18, 20, 22, 0.44)
+        );
+}
+
+
+/* =========================================================
+   CORRECT ANSWER
+========================================================= */
+
+.answer-choice.correct {
+    border-color:
+        rgba(214, 168, 79, 0.70);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.14),
+            rgba(18, 20, 22, 0.42)
+        );
+
+    color: #f0c94a;
+}
+
+
+/* =========================================================
+   INCORRECT ANSWER
+========================================================= */
+
+.answer-choice.incorrect {
+    border-color:
+        rgba(180, 150, 90, 0.35);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(90, 75, 50, 0.16),
+            rgba(18, 20, 22, 0.42)
+        );
+
+    color: rgba(235, 235, 235, 0.75);
+}
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.answer-feedback {
+    min-height: 25px;
+
+    margin-top: 18px;
+
+    color: rgba(235, 235, 235, 0.70);
+
+    line-height: 1.5;
+}
+
+.answer-feedback strong {
+    color: #d6a84f;
+}
+
+
+/* =========================================================
+   TEST BUTTON
+========================================================= */
+
+.test-button {
+    margin-top: 20px;
+
+    padding: 11px 20px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.55);
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.16),
+            rgba(40, 34, 15, 0.55)
+        );
+
+    color: #f1f1f1;
+
+    font: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.test-button:hover {
+    border-color:
+        rgba(240, 201, 74, 0.75);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.24),
+            rgba(40, 34, 15, 0.65)
+        );
+
+    color: #f0c94a;
+}
+
+
+/* =========================================================
+   TEST COMPLETE
+========================================================= */
+
+.test-complete {
+    text-align: center;
+
+    padding: 35px 15px;
+}
+
+.test-complete h4 {
+    margin: 0 0 15px;
+
+    color: #f0c94a;
+}
+
+.test-complete p {
+    color: rgba(235, 235, 235, 0.72);
+
+    font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   PROGRESS INFORMATION
+========================================================= */
+
+.test-progress {
+    display: grid;
+
+    grid-template-columns:
+        repeat(1, minmax(0, 1fr));
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.test-progress > div {
+    padding: 14px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.18);
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(18, 20, 22, 0.38)
+        );
+
+    text-align: center;
+}
+
+.test-progress span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: rgba(220, 220, 220, 0.45);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.test-progress strong {
+    color: #d6a84f;
+
+    font-size: 1.2rem;
+
+    text-shadow:
+        0 0 8px rgba(214, 168, 79, 0.12);
+}
+
+
+/* =========================================================
+   RESET BUTTON
+========================================================= */
+
+.reset-button {
+    display: block;
+
+    margin: 18px auto 0;
+    padding: 7px 12px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.20);
+
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: rgba(220, 220, 220, 0.50);
+
+    font-size: 0.72rem;
+
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    border-color:
+        rgba(214, 168, 79, 0.55);
+
+    color: #d6a84f;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 601px) {
+
+    .test-content {
+        width: min(1200px, calc(100% - 40px));
+
+        padding: 30px 0 60px;
+    }
+
+    .test-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 14px;
+    }
+
+    .test-card-main,
+    .test-card-small,
+    .test-card-medium {
+        grid-column: span 1;
+    }
+
+    .test-card-main {
+        min-height: 420px;
+    }
+
+    .test-area {
+        padding: 22px;
+    }
+
+    .test-progress {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 951px) {
+
+    .test-grid {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
+        gap: 18px;
+
+        grid-auto-flow: dense;
+    }
+
+    .test-card-main {
+        grid-column: span 3;
+
+        min-height: 520px;
+    }
+
+    .test-card-small {
+        grid-column: span 1;
+
+        min-height: 230px;
+    }
+
+    .test-card-medium {
+        grid-column: span 2;
+
+        min-height: 230px;
+    }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   Keep cards static without hover effects
+========================================================= */
+
+@media (hover: none) {
+
+    .answer-choice:hover {
+        border-color:
+            rgba(214, 168, 79, 0.20);
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(255, 255, 255, 0.055),
+                rgba(18, 20, 22, 0.38)
+            );
+
+        color: #ffffff;
+    }
+
+    .test-button:hover {
+        border-color:
+            rgba(214, 168, 79, 0.55);
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(214, 168, 79, 0.16),
+                rgba(40, 34, 15, 0.55)
+            );
+
+        color: #f1f1f1;
+    }
+
+    .reset-button:hover {
+        border-color:
+            rgba(255, 255, 255, 0.20);
+
+        color: rgba(220, 220, 220, 0.50);
+    }
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

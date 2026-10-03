@@ -1,0 +1,230 @@
+/* =========================================================
+   TOOLS ART
+========================================================= */
+
+.tools-art {
+    display: block;
+
+    width: 100vw;
+    max-width: none;
+    height: auto;
+
+    margin-top: 0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   TOOLS PAGE
+========================================================= */
+
+.tools-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0 20px 40px;
+
+    box-sizing: border-box;
+}
+
+.tools-content h2 {
+    margin: 0 0 24px;
+
+    text-align: center;
+
+    font-family:
+        "Times New Roman",
+        Times,
+        serif;
+
+    font-size: 2.2rem;
+    letter-spacing: 0.15em;
+
+    color: #d6a84f;
+
+    text-shadow:
+        0 0 12px rgba(214, 168, 79, 0.12);
+}
+
+
+/* =========================================================
+   TOOLS GRID
+========================================================= */
+
+.tools-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   TOOL CARDS
+========================================================= */
+
+.tool-card {
+    position: relative;
+
+    min-height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(227, 226, 226, 0.10),
+            rgba(18, 20, 22, 0.45)
+        );
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.32);
+
+    border-radius: 10px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.07),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.06),
+        0 8px 24px rgba(0, 0, 0, 0.22);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =========================================================
+   CLICKABLE TOOL
+========================================================= */
+
+.tool-card:hover {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.16),
+            rgba(18, 20, 22, 0.55)
+        );
+
+    border-color:
+        rgba(214, 168, 79, 0.55);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        0 8px 24px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================================
+   TOOL CONTENT
+========================================================= */
+
+.tool-card-content {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   COLOR WHEEL
+========================================================= */
+
+.tool-color-wheel {
+    display: block;
+
+    width: min(250px, 80%);
+    height: auto;
+
+    margin: 2px auto;
+}
+
+
+/* =========================================================
+   TOOL TITLE
+========================================================= */
+
+.tool-card h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 1.1rem;
+    letter-spacing: 0.06em;
+}
+
+
+/* =========================================================
+   TOOL DESCRIPTION
+========================================================= */
+
+.tool-card p {
+    margin: 0;
+
+    color: rgba(235, 235, 235, 0.78);
+
+    font-size: 1.3rem;
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.tool-status {
+    margin-top: 10px;
+
+    color: #d6a84f;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .tools-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-card {
+        min-height: 180px;
+    }
+
+    .tools-content h2 {
+        font-size:
+            clamp(1.2rem, 6vw, 2.2rem);
+
+        letter-spacing: 0.08em;
+    }
+}
